@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="me.blackout.mathsapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="me.blackout.mathsapp.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="me.blackout.mathsapp.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_easymode"
+        android:name="me.blackout.mathsapp.ui.easymode.EasyMode"
+        android:label="Easy Mode"
+        tools:layout="@layout/fragment_easy_mode" />
+    <fragment
+        android:id="@+id/nav_mediummode"
+        android:name="me.blackout.mathsapp.ui.mediummode.MediumMode"
+        android:label="Medium Mode"
+        tools:layout="@layout/fragment_medium_mode" />
+
+    <fragment
+        android:id="@+id/nav_hardmode"
+        android:name="me.blackout.mathsapp.ui.hardmode.HardMode"
+        android:label="Hard Mode"
+        tools:layout="@layout/fragment_hard_mode" />
+</navigation>
